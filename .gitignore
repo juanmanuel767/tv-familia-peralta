@@ -1,0 +1,9 @@
+# Herramientas y pruebas locales
+.claude/
+.tokenproxy/
+prueba-opencode/
+# Compilados, llaves de firma y cachés
+build/
+*.keystore
+*.jks
+__pycache__/

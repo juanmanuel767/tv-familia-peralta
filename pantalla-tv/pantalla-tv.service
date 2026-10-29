@@ -1,0 +1,12 @@
+[Unit]
+Description=Ayudante: la TV enciende y apaga la proyección de esta computadora
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/python3 -I "/home/user/Descargas/ayuda  para claude/pantalla-tv/ayudante.py"
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=graphical-session.target
